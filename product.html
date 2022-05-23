@@ -1,0 +1,261 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGINEERING SOLUTIONS</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'https://use.fontawesome.com/releases/v5.15.4/css/all.css' %}" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous"
+    />
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap' %}" 
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <!--Navbar section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fas fa-cogs"></i>ENGINEERING <br/>SOLUTIONS</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tech" class="navbar__links">Tech</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="product" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contact" class="navbar__links">Contacts</a>
+                </li>
+                <!--<li class="navbar__btn">
+                    <a href="login" class="button">login</a>
+                </li>-->
+                <li class="navbar__btn">
+                    <a href="logout" class="button">logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="mainly__icons">
+            <i class="fas fa-cogs" style="height:200px; width:200px;"></i>
+            <h1>Welcome to my Product Page</h1>
+        </div>
+    </div>
+
+        <div class="services1">
+            <h1>See what my products is about</h1>
+            <img src="{% static 'images/img5.svg' %}" alt="" class="img_prod">
+            <h1>Graphics and Designing</h1>
+            <div class="services__container">
+                <div class="ser1__card">
+                    <img src="{% static 'images/prod1.jpg' %}" alt="pic" id="main__img">
+                    <h2>Graphics-Design</h2>
+                    <p>high exclusive stunning designs</p>
+                    <button>Purchase!!!</button>
+                </div>
+                <div class="ser1__card">
+                    <img src="{% static 'images/prod2.jpg' %}" alt="pic" id="main__img">
+                    <h2>Design-gallore</h2>
+                    <p>Beautiful designs at your taste</p>
+                    <button>Purchase!!!</button>
+                </div>
+                <div class="ser1__card">
+                    <img src="{% static 'images/prod3.jpg' %}" alt="pic" id="main__img">
+                    <h2>Brand top design style</h2>
+                    <p>let's help provide you with a unique styling</p>
+                    <button>Purchase!!!</button>
+                </div>
+            </div><br>
+            <h1>Copywriting and Content writing</h1>
+            <div class="services__container">
+                <div class="ser2__card">
+                    <img src="{% static 'images/prod16.jpg' %}" alt="pic" id="main__img">
+                    <h2>Convincing Copywriting</h2>
+                    <p>catchy & hooky write up</p>
+                    <button>Purchase!!!</button>
+                </div>
+                <div class="ser2__card">
+                    <img src="{% static 'images/prod5.jpg' %}" alt="pic" id="main__img">
+                    <h2>Highly Purchase Content</h2>
+                    <p>detailed content at your tips</p>
+                    <button>Purchase!!!</button>
+                </div>
+                <div class="ser2__card">
+                    <img src="{% static 'images/prod17.jpg' %}" alt="pic" id="main__img">
+                    <h2>SEO Driven Copy</h2>
+                    <p>effective enrich seo copy source</p>
+                    <button>Purchase!!!</button>
+                </div>
+            </div><br>
+            <h1>Games & Websites development</h1>
+            <div class="services__container">
+                <div class="ser3__card">
+                    <img src="{% static 'images/prod7.jpg' %}" alt="pic" id="main__img">
+                    <h2>Gaming Entertainment</h2>
+                    <p>top notch games with beautiful graphics</p>
+                    <button>Purchase!!!</button>
+                </div>
+                <div class="ser3__card">
+                    <img src="{% static 'images/prod8.jpg' %}" alt="pic" id="main__img">
+                    <h2>Website Engineering</h2>
+                    <p>mobile friendly website for easy user interaction</p>
+                    <button>Purchase!!!</button>
+                </div>
+                <div class="ser3__card">
+                    <img src="{% static 'images/prod18.jpg' %}" alt="pic" id="main__img">
+                    <h2>UI/UX Set Up</h2>
+                    <p>friendly UI/UX set up for mobile games & websites</p>
+                    <button>Purchase!!!</button>
+                </div>
+            </div><br>
+            <h1>Technology/Engineering education tutoring-guide</h1>
+            <div class="services__container">
+                <div class="ser4__card">
+                    <img src="{% static 'images/prod10.jpg' %}" alt="pic" id="main__img">
+                    <h2>Education On Technology</h2>
+                    <p>beautiful insights study about technology</p>
+                    <button>Purchase!!!</button>
+                </div>
+                <div class="ser4__card">
+                    <img src="{% static 'images/prod11.jpg' %}" alt="pic" id="main__img">
+                    <h2>Engineering Catalogue</h2>
+                    <p>books and practise materials for engineers</p>
+                    <button>Purchase!!!</button>
+                </div>
+                <div class="ser4__card">
+                    <img src="{% static 'images/prod12.jpg' %}" alt="pic" id="main__img">
+                    <h2>Tutoring & Education Assist</h2>
+                    <p>100% tutoring and guide (basics-advanced) science/tech courses and subjects
+                    (primary-tertiary)
+                    </p>
+                    <button>Purchase!!!</button>
+                </div>
+            </div><br>
+            <h1>Backend-engineering/Apps development & Programming tutoring</h1>
+            <div class="services__container">
+                <div class="ser5__card">
+                    <img src="{% static 'images/prod13.jpg' %}" alt="pic" id="main__img">
+                    <h2>Backend Development</h2>
+                    <p>mechanised-efficient backend set up to solve respective user's problem</p>
+                    <button>Purchase!!!</button>
+                </div>
+                <div class="ser5__card">
+                    <img src="{% static 'images/prod14.jpg' %}" alt="pic" id="main__img">
+                    <h2>Apps Engineering</h2>
+                    <p>highly responsive apps to solve tech problems & aid reliable services quickly</p>
+                    <button>Purchase!!!</button>
+                </div>
+                <div class="ser5__card">
+                    <img src="{% static 'images/prod15.jpg' %}" alt="pic" id="main__img">
+                    <h2>Programming Guide</h2>
+                    <p>maximum assistance to tutoring to aspiring programmers</p>
+                    <button>Purchase!!!</button>
+                </div>
+            </div><br><br>
+            <p>These are all samples of my products and what i offer, kindly purchase 
+                any and you can also reach out to my contact page below by simply clicking
+                on the button to access me for fast services all for you. I wish to offer you 
+                the best of my services to your utmost satisfaction!!! <br>Thanks a lot for viewing 
+                my product page <br><em style="color: aqua;">ENGINEERING SOLUTIONS</em> offering
+                reliable creativity in technology, science & engineering.
+            </p><br>
+            <img src="{% static 'images/img6.svg' %}" alt="">
+            <p>Please kindly click the button below!!! to view my contacts</p>
+            <button class="btn__contact"><a href="contact">Contact!!! <i class="fas fa-id-card-alt"></i></a></button>
+
+        </div>
+
+    <!--footer section-->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About the developer</h2>
+                    <a href="tech">How it works</a>
+                    <a href="/">Testimonials</a>
+                    <a href="/">Careers</a>
+                    <a href="contact">Contact</a>
+                    <a href="/">Terms of service</a>
+                </div>
+                <div class="footer__link--items">
+                   <h2>Developer Contact</h2>
+                   <a href="contact">Contact</a>
+                   <a href="/">Support</a>
+                   <a href="/">Help</a>
+                   <a href="/">Destinations</a>
+                   <a href="/">Quotes</a>
+               </div>
+            </div>
+            <div class="footer__link--wrapper">
+               <div class="footer__link--items">
+                   <h2>Videos</h2>
+                   <a href="/">Submit Video</a>
+                   <a href="/">Ambassadors</a>
+                   <a href="/">Influencer</a>
+                   <a href="/">Agency</a>
+               </div>
+               <div class="footer__link--items">
+                  <h2>Social Media</h2>
+                  <a href="https://www.instagram.com/joshuaoluwaferonmi/">Instagram</a>
+               <a href="https://web.facebook.com/joshua.oluwaferonmi/">Facebook</a>
+               <a href="https://twitter.com/OluferonmiJ">Twitter</a>
+               <a href="https://www.linkedin.com/feed/">linkedin</a>
+               <a href="https://web.telegram.org/z/">Telegram</a>
+               <a href="+234-70-6583-8151">Whatsapp</a>
+              </div>
+           </div>
+        </div>
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo"><i class="fas 
+                    fa-cogs"></i>ENGINEERING <br/>SOLUTIONS</a>
+                </div>
+                <P class="website__right">&copyENGINEERING SOLUTIONS 2021. All rights
+                reserved</P>
+                <div class="social__icons">
+                    <a href="/" class="social__icon--link" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                       <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                       <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                       <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                       <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                       <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                       <i class="fab fa-youtube"></i>
+                    </a>
+               </div>
+            </div>
+        </div>
+       </div>
+   
+       <script src="{% static 'app.js' %}"></script>  
+     </body>
+   </html>

@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGINEERING SOLUTIONS</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'https://use.fontawesome.com/releases/v5.15.4/css/all.css' %}" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous"
+    />
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap' %}" 
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <!--Navbar section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fas fa-cogs"></i>ENGINEERING <br/>SOLUTIONS</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tech" class="navbar__links">Tech</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="product" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contact" class="navbar__links">Contacts</a>
+                </li>
+                <!--<li class="navbar__btn">
+                    <a href="login" class="button">login</a>
+                </li>-->
+                <li class="navbar__btn">
+                    <a href="logout" class="button">logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="mainly__icons">
+            <marquee><i class="fas fa-cogs" style="height:200px; width:200px;"></i></marquee>
+            <h1>View! my Contact Page</h1>
+        </div>
+    </div>
+
+    <div class="main2__container">
+        <div class="mainly__content">
+            <p>You may wish to communicate with me or know more about my services<br>below! are 
+                my contacts to get in touch with me for a quick and reliable services </p>
+            <p><i class="fab fa-call"></i> call the line: +234-70-6583-8151, +234-90-1300-4475 <br>
+            <i class="fab fa-whatsapp"></i> message me on: <a href="">+234-70-6583-8151</a> <br>
+            <i class="fab fa-facebook"></i> chat up via: <a href="">Joshua Oluferonmi</a> <br>
+            <i class="fab fa-twitter"></i> follow on: <a href="">Joshua Oluferonmi</a> <br>
+            <i class="fab fa-git"></i> view my projects via: <a href="">programming projects</a><br>
+            <i class="fab fa-instagram"></i> follow on: <a href="">Joshua Oluferonmi</a> <br>
+            <i class="fab fa-linkedin"></i> explore my services at: <a href="">Joshua Oluferonmi</a><br>
+            <i class="fab fa-telegram"></i> contact via: <a href="">Joshua Oluferonmi</a> <br>
+            <i class="fab fa-youtube"></i> follow videos on youtube: <a href="">Joshua Oluferonmi</a></p>
+        </div>
+        <div class="main__img--container">
+            <img src="{% static 'images/contact1.svg' %}" alt="pic" id="main__img">
+        </div>
+    </div>
+     
+    <div class="main__1">
+        <div class="mainly__icons">
+            <marquee> <p>Thanks for accessing my website <span>@ENGISOL-ENGINEERING SOLUTION</span> where 
+            we offer great technology services and plan for a brighter future of a better world using 
+            technology.kindly <em>Sign Up</em> at the top of the page to dive into more of my platforms
+        God bless us all!!!</p></marquee>
+            <i class="fas fa-cogs" style="height:200px; width:200px;"></i> 
+            <h1>ENGISOL <br>rendering technology for man's relief</h1>
+        </div>
+    </div>
+
+<!--footer section-->
+<div class="footer__container">
+    <div class="footer__links">
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>About the developer</h2>
+                <a href="tech">How it works</a>
+                 <a href="/">Testimonials</a>
+                 <a href="/">Careers</a>
+                 <a href="contact">Contact</a>
+                 <a href="/">Terms of service</a>
+             </div>
+             <div class="footer__link--items">
+                <h2>Developer Contact</h2>
+                <a href="contact">Contact</a>
+               <a href="/">Support</a>
+               <a href="/">Help</a>
+               <a href="/">Destinations</a>
+               <a href="/">Quotes</a>
+           </div>
+        </div>
+        <div class="footer__link--wrapper">
+           <div class="footer__link--items">
+               <h2>Videos</h2>
+               <a href="/">Submit Video</a>
+               <a href="/">Ambassadors</a>
+               <a href="/">Influencer</a>
+               <a href="/">Agency</a>
+           </div>
+           <div class="footer__link--items">
+              <h2>Social Media</h2>
+              <a href="https://www.instagram.com/joshuaoluwaferonmi/">Instagram</a>
+               <a href="https://web.facebook.com/joshua.oluwaferonmi/">Facebook</a>
+               <a href="https://twitter.com/OluferonmiJ">Twitter</a>
+               <a href="https://www.linkedin.com/feed/">linkedin</a>
+               <a href="https://web.telegram.org/z/">Telegram</a>
+               <a href="+234-70-6583-8151">Whatsapp</a>
+          </div>
+       </div>
+    </div>
+    <div class="social__media">
+        <div class="social__media--wrap">
+            <div class="footer__logo">
+                <a href="/" id="footer__logo"><i class="fas 
+                fa-cogs"></i>ENGINEERING <br/>SOLUTIONS</a>
+            </div>
+            <P class="website__right">&copyENGINEERING SOLUTIONS 2021. All rights
+            reserved</P>
+            <div class="social__icons">
+                <a href="/" class="social__icon--link" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                   <i class="fab fa-facebook"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                   <i class="fab fa-twitter"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                   <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                   <i class="fab fa-telegram"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                   <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                   <i class="fab fa-youtube"></i>
+                </a>
+           </div>
+        </div>
+    </div>
+   </div>
+
+   <script src="{% static 'app.js' %}"></script>
+</body>
+</html>

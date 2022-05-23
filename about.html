@@ -1,0 +1,233 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>'
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGINEERING SOLUTIONS</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'https://use.fontawesome.com/releases/v5.15.4/css/all.css' %}" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous"
+    />
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap' %}" 
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <!--Navbar section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fas fa-cogs"></i>ENGINEERING <br/>SOLUTIONS</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tech" class="navbar__links">Tech</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="product" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contact" class="navbar__links">Contacts</a>
+                </li>
+                <!--<li class="navbar__btn">
+                    <a href="login" class="button">login</a>
+                </li>-->
+                <li class="navbar__btn">
+                    <a href="logout" class="button">logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="mainly__icons">
+            <i class="fas fa-cogs" style="height:200px; width:200px;"></i>
+            <h1>Welcome to About Page</h1>
+        </div>
+        <div class="mainly__container">
+            <marquee behaviour="slide" direction="right"><div class="main__img--container">
+                <img src="{% static 'images/pic23.svg' %}" alt="pic" id="main__img">
+            </div></marquee>
+            <div class="main__img--container">
+                <img src="{% static 'images/pic27.svg' %}" alt="pic" id="main__img">
+            </div>
+            <marquee behaviour="slide" direction="left"><div class="main__img--container">
+                <img src="{% static 'images/pic25.svg' %}" alt="pic" id="main__img">
+            </div></marquee>
+        </div>
+        <div class="mainly__container">
+            <div class="main__img--container">
+                <img src="{% static 'images/pic28.svg' %}" alt="pic" id="main__img">
+            </div>
+            <div class="main__img--container">
+                <img src="{% static 'images/pic26.svg' %}" alt="pic" id="main__img">
+            </div>
+            <div class="main__img--container">
+                <img src="{% static 'images/pic31.svg' %}" alt="pic" id="main__img">
+            </div>
+        </div>
+    </div>
+    <div class="Intro">
+        <h1>ABOUT</h1><br>
+        <p>Hi, welcome to my website page at <em>ENGINEERING SOLUTIONS</em>. My
+        name is AKINWOLE JOSHUA SIMIDELE popularly known as <em>WHITEKID</em> 
+    CEO of <em>ENGISOL(ENGINEERING SOLUTIONS)</em>. I am a student of<em>OBAFEMI AWOLOWO UNIVERSITY, 
+        ILE-IFE</em>. Department of COMPUTER ENGINEERING. Favourite Science course is <strong>CHEMISTRY</strong>
+        tho a computer student and Favourite Engineering/Technology course is <strong>ENGINEERING MECHANICS</strong>
+        as we know of <em>MEE 205</em> laughs!!.
+        I am a computer programmer and i specialise in the following servives:</p><br>
+    <ul>
+        <li>FRONTEND ENGINEERING</li>
+        <marquee behavior="slide" direction="left"><img src="{% static 'images/pic33.svg' %}" class="img_list" alt=""></marquee>
+        <li>BACKEND ENGINEERING</li>
+        <marquee behavior="slide" direction="right"><img src="{% static 'images/pic30.svg' %}" class="img_list" alt=""></marquee>
+        <li>GRAPHICS DESIGNING</li>
+        <marquee behavior="slide" direction="left"><img src="{% static 'images/pic32.svg' %}" class="img_list" alt=""></marquee>
+        <li>COPYWRITING</li>
+        <marquee behavior="slide" direction="right"><img src="{% static 'images/pic34.svg' %}" class="img_list" alt=""></marquee>
+        <li>ENGINEERING EDUCATION ASSIST</li>
+        <marquee behavior="slide" direction="left"><img src="{% static 'images/pic36.svg' %}" class="img_list" alt=""></marquee>
+        <li>TECHNOLOGY GUIDE</li>
+        <marquee behavior="slide" direction="right"><img src="{% static 'images/pic29.svg' %}" class="img_list" alt=""></marquee>
+    </ul><br>
+    <p>I also have proficiency skills in these programming languages as regard my skills 
+        up here in:
+    </p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>PYTHON-(coupled with Django)</li>
+        <li>PYTHON CORE</li>
+        <li>PHP</li>
+        <li>C++</li>
+    </ul>
+    <div class="mainy__container">
+        <div class="main__img--container">
+            <a href="/"><img src="{% static 'images/img2.png' %}" alt="pic" id="main__img"></a>
+        </div>
+        <div class="main__img--container">
+            <a href="/"><img src="{% static 'images/img3.svg' %}" alt="pic" id="main__img"></a>
+        </div>
+     </div>
+     <div class="mainy__container">
+        <div class="main__img--container">
+            <a href="/"><img src="{% static 'images/img1.png' %}" alt="pic" id="mainy__img"></a>
+        </div>
+        <div class="main__img--container">
+            <a href="/"><img src="{% static 'images/img4.png' %}" alt="pic" id="mainy__img"></a>
+        </div>
+     </div>
+<br>
+    <p>As you see also i have built many projects involved in Websites, Games
+    , and Apps and i also create educational tutoring for all tech and engineering 
+    related courses online and physical. I offer graphics design and copywriting services
+    which i'll post thier pictures in my products page and also send you a link of access
+    to view them.I also offer programming lectures, guide and assistance on the above languages
+    i mentioned above. I'll give you the best tips to be on your way to success as a programmer.
+    You can hire me for any job or purchase my products in the skills and
+    specialisation i offer up here and i deliver the best quality services of your choice.
+    </p><br>
+    <p>My aim is to help people interested in TECHNOLOGY, SCIENCE and ENGINEERING attain thier skills
+        and to become better ENGINEERS, TECHNICIANS and SCIENTIST. I care for all Tech minds out there
+        and you can be the next top hiring <strong>TECH SAVY</strong>. You can be outstanding and i am
+        here to help you achieve what it needs. <br>lets 
+        build a better future with the power of technology and engineering
+        , stand out and be that next tech expert solving problems for the world 
+        and impacting the world.
+        <br>Your Friend <br>WHITEKID!!!
+    </p>
+    <p>Kindly access my <span style="color:aqua;"><a href="product">PRODUCT</a></span> page to view my services and offers
+    thank you!!!</p><br><br>
+    <img src="{% static 'images/pic35.svg' %}" class="img_list1" alt="">
+ </div>
+
+ <div class="footer__container">
+    <div class="footer__links">
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>About the developer</h2>
+                <a href="tech">How it works</a>
+                <a href="/">Testimonials</a>
+                <a href="/">Careers</a>
+                <a href="contact">Contact</a>
+                <a href="/">Terms of service</a>
+            </div>
+            <div class="footer__link--items">
+               <h2>Developer Contact</h2>
+               <a href="contact">Contact</a>
+               <a href="/">Support</a>
+               <a href="/">Help</a>
+               <a href="/">Destinations</a>
+               <a href="/">Quotes</a>
+           </div>
+        </div>
+        <div class="footer__link--wrapper">
+           <div class="footer__link--items">
+               <h2>Videos</h2>
+               <a href="/">Submit Video</a>
+               <a href="/">Ambassadors</a>
+               <a href="/">Influencer</a>
+               <a href="/">Agency</a>
+           </div>
+           <div class="footer__link--items">
+              <h2>Social Media</h2>
+              <a href="https://www.instagram.com/joshuaoluwaferonmi/">Instagram</a>
+               <a href="https://web.facebook.com/joshua.oluwaferonmi/">Facebook</a>
+               <a href="https://twitter.com/OluferonmiJ">Twitter</a>
+               <a href="https://www.linkedin.com/feed/">linkedin</a>
+               <a href="https://web.telegram.org/z/">Telegram</a>
+               <a href="+234-70-6583-8151">Whatsapp</a>
+          </div>
+       </div>
+    </div>
+    <div class="social__media">
+        <div class="social__media--wrap">
+            <div class="footer__logo">
+                <a href="/" id="footer__logo"><i class="fas 
+                fa-cogs"></i>ENGINEERING <br/>SOLUTIONS</a>
+            </div>
+            <P class="website__right">&copyENGINEERING SOLUTIONS 2021. All rights
+            reserved</P>
+            <div class="social__icons">
+                <a href="/" class="social__icon--link" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                   <i class="fab fa-facebook"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                   <i class="fab fa-twitter"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                   <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                   <i class="fab fa-telegram"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                   <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                   <i class="fab fa-youtube"></i>
+                </a>
+           </div>
+        </div>
+    </div>
+   </div>
+ 
+    <script src="{% static 'app.js' %}"></script>
+</body>
+</html>

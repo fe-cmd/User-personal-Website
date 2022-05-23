@@ -1,0 +1,184 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGINEERING SOLUTIONS</title>
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'https://use.fontawesome.com/releases/v5.15.4/css/all.css' %}" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous"
+    />
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap' %}" 
+    rel="stylesheet"
+    />
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Navbar section-->
+    <nav class="navbar" id="header">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fas fa-cogs"></i>ENGINEERING <br/>SOLUTIONS</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tech" class="navbar__links">Tech</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="product" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contact" class="navbar__links">Contacts</a>
+                </li>
+                <!--<li class="navbar__btn">
+                    <a href="login" class="button">login</a>
+                </li>-->
+                <li class="navbar__btn">
+                    <a href="logout" class="button">logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hero section-->
+    <div class="main">
+        <div class="main__icons">
+            <i class="fas fa-cogs" style="height:200px; width:200px;"></i>
+        </div>
+        <div class="main__container">
+            <div class="main__content">
+                <h1>FUTURE ENGINEERING</h1>
+                <h2>TECHNOLOGY</h2>
+                <p>See the uniqueness in Engineering world</p>
+                <button class="main__btn"><a href="https://www.renishaw.com/en/what-makes-great-engineers--40456">Get Started</a></button>
+            </div>
+            <div class="main__img--container">
+                <img src="{% static 'images/pic1.svg' %}" alt="pic" id="main__img">
+            </div>
+        </div>
+    </div>
+    
+    <!--services section-->
+    <div class="services">
+        <h1>See what the hype is about</h1>
+        <div class="services__container">
+            <div class="services__card">
+                <img src="{% static 'images/pic2.jpg' %}" alt="pic" id="main__img">
+                <h2>Superb-Experience</h2>
+                <p>AI powered Technology</p>
+                <a href="https://builtin.com/artificial-intelligence/examples-ai-in-industry"><button>Get Started</button></a>
+            </div>
+            <div class="services__card">
+                <img src="{% static 'images/pic6.jpg' %}" alt="pic" id="main__img">
+                <h2>Are you Ready</h2>
+                <p>Let's help plan the future</p>
+                <a href="https://www.goguardian.com/blog/how-does-technology-prepare-students-for-the-future"><button>Get Started</button></a>
+            </div>
+            <div class="services__card">
+                <img src="{% static 'images/pic3.jpg' %}" alt="pic" id="main__img">
+                <h2>Be skillful wise</h2>
+                <p>Begin great technologies</p>
+                <a href="https://learntocodewith.me/posts/tech-skills-in-demand/"><button>Get Started</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!--footer section-->
+    <div class="footer__container">
+     <div class="footer__links">
+         <div class="footer__link--wrapper">
+             <div class="footer__link--items">
+                 <h2>About the developer</h2>
+                 <a href="tech">How it works</a>
+                 <a href="/">Testimonials</a>
+                 <a href="/">Careers</a>
+                 <a href="contact">Contact</a>
+                 <a href="/">Terms of service</a>
+             </div>
+             <div class="footer__link--items">
+                <h2>Developer Contact</h2>
+                <a href="contact">Contact</a>
+                <a href="/">Support</a>
+                <a href="/">Help</a>
+                <a href="/">Destinations</a>
+                <a href="/">Quotes</a>
+            </div>
+         </div>
+         <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>Videos</h2>
+                <a href="/">Submit Video</a>
+                <a href="/">Ambassadors</a>
+                <a href="/">Influencer</a>
+                <a href="/">Agency</a>
+            </div>
+            <div class="footer__link--items">
+               <h2>Social Media</h2>
+               <a href="https://www.instagram.com/joshuaoluwaferonmi/">Instagram</a>
+               <a href="https://web.facebook.com/joshua.oluwaferonmi/">Facebook</a>
+               <a href="https://twitter.com/OluferonmiJ">Twitter</a>
+               <a href="https://www.linkedin.com/feed/">linkedin</a>
+               <a href="https://web.telegram.org/z/">Telegram</a>
+               <a href="+234-70-6583-8151">Whatsapp</a>
+           </div>
+        </div>
+     </div>
+     <div class="social__media">
+         <div class="social__media--wrap">
+             <div class="footer__logo">
+                 <a href="/" id="footer__logo"><i class="fas 
+                 fa-cogs"></i>ENGINEERING <br/>SOLUTIONS</a>
+             </div>
+             <P class="website__right">&copyENGINEERING SOLUTIONS 2021. All rights
+             reserved</P>
+             <div class="social__icons">
+                 <a href="/" class="social__icon--link" target="_blank">
+                   <i class="{% static 'fab fa-instagram' %}"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                 </a>
+            </div>
+         </div>
+     </div>
+    </div>
+
+    <script src="{% static 'app.js' %}"></script>
+</body>
+</html>

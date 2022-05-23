@@ -1,0 +1,327 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGINEERING SOLUTIONS</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'https://use.fontawesome.com/releases/v5.15.4/css/all.css' %}" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous"
+    />
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap' %}" 
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <!--Navbar section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fas fa-cogs"></i>ENGINEERING <br/>SOLUTIONS</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tech" class="navbar__links">Tech</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="product" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contact" class="navbar__links">Contacts</a>
+                </li>
+                <!--<li class="navbar__btn">
+                    <a href="login" class="button">login</a>
+                </li>-->
+                <li class="navbar__btn">
+                  <a href="logout" class="button">logout</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hero section-->
+    <div class="main">
+        <div class="main__icons">
+            <i class="fas fa-cogs" style="height:200px; width:200px;"></i>
+        </div>
+        <div class="main__container">
+            <div class="main__content">
+                <h1>WELCOME TO TECH PAGE</h1>
+                <h2>SCIENCEAPPLY</h2>
+                <p>See the remarkable work in world of technology</p>
+                <button class="main__btn"><a href="https://www.weforum.org/agenda/2018/04/this-chart-shows-every-major-technological-innovation-in-the-last-150-years-and-how-they-have-changed-the-way-we-work">learn more</a></button>
+            </div>
+            <div class="main__img--container">
+                <img src="{% static 'images/pic13.svg' %}" alt="pic" id="main__img">
+            </div>
+        </div>
+        <div class="main__container">
+            <div class="main__img--container">
+                <img src="{% static 'images/pic14.svg' %}" alt="pic" id="mainly__img">
+            </div>
+            <div class="main__content">
+                <h1>A place for talented tech minds</h1>
+                <h2></h2>
+                <p>You can become the best Tech Savy of time</p>
+            </div>
+        </div>
+    </div>
+    
+    <!--services section-->
+    <div class="services">
+        <h1>See what we have in stock for you</h1>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="{% static 'images/pic4.jpg' %}" class="img1" >
+  <div class="text">Help you become a skillful Engineer in relevant Technology fields</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="{% static 'images/pic5.jpg' %}" class="img2" >
+  <div class="text">Help explore and learn products of technology</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="{% static 'images/pic7.jpg' %}" class="img3">
+  <div class="text">Assistance in better machine learning and design</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="{% static 'images/pic8.jpg' %}" class="img4" >
+    <div class="text">Help you becoming the reliable tech savy, computer and electrical experts</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="{% static 'images/pic9.jpg' %}" class="img5">
+    <div class="text">Assistance in Technology/Engineering related education & trainings</div>
+  </div>
+  
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span>  
+</div><br/>
+<h1>view other features of technology and its invention</h1>
+<p class="view">kindly click <span class="cursor:click;"></span><i class="fa fa-like"></i> on any of the images below to get a proper view of 
+  branches of Technology and Engineering <br/> You can scroll through and close after viewing
+the designs</p><br>
+<!-- Images used to open the lightbox -->
+<div class="row" style="height: 200px;">
+    <div class="column">
+      <img src="{% static 'images/pic20.jpg' %}" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="{% static 'images/pic16.jpg' %}" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="{% static 'images/pic19.jpg' %}" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="{% static 'images/pic18.jpg' %}" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="{% static 'images/pic17.jpg' %}" onclick="openModal();currentSlide(5)" class="hover-shadow">
+      </div>
+      <div class="column">
+      <img src="{% static 'images/pic11.jpg' %}" onclick="openModal();currentSlide(6)" class="hover-shadow">
+      </div>
+  </div><br/><br/>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <div class="part">Agricultural Engineering was brought up through technology</div>
+        <img src="{% static 'images/pic20.jpg' %}" class="img-true">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <div class="part">Technology has made inventions for easy mechanised farming</div>
+        <img src="{% static 'images/pic16.jpg' %}" class="img-true">
+        
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <div class="part">Automobile Engineering aspect also evolved for fast comfortable transportation</div>
+        <img src="{% static 'images/pic19.jpg' %}" class="img-true">
+        
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="{% static 'images/pic18.jpg' %}" class="img-true">
+        <div class="part">Engineering in Computing aspect also evolved for quickest system operation flow</div>
+
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="{% static 'images/pic17.jpg' %}" class="img-true">
+        <div class="part">Technology has helped in Mechanical Engineering for building machine engines of high efficiency</div>
+
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="{% static 'images/pic11.jpg' %}" class="img-true">
+        <div class="part">Technology evolvement in Computer Programming, Networking and Hardware/software operation</div>
+
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="{% static 'images/pic20.jpg' %}" onclick="currentSlide(1)" alt="Lady-AgricEngr">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="{% static 'images/pic16.jpg' %}" onclick="currentSlide(2)" alt="Mechanised farm">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="{% static 'images/pic19.jpg' %}" onclick="currentSlide(3)" alt="Technology Auto-mobile">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="{% static 'images/pic18.jpg' %}" onclick="currentSlide(4)" alt="Lady Computer-Engineering">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="{% static 'images/pic17.jpg' %}" onclick="currentSlide(5)" alt="Mechanical Engineering">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="{% static 'images/pic11.jpg' %}" onclick="currentSlide(6)" alt="Computer-Programming-Hardwares">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="about">
+<p class="view">Thanks for viewing!!!. Kindly click the button below to know about the Developer and what
+  this site is for</p>
+  <div class="main__container">
+    <div class="main__img--container">
+      <img src="{% static 'images/pic22.svg' %}" alt="Be the Best!!!">
+      <button class="btn__click"><a href="about">Click!!!</a></button>
+    
+    </div>
+    <div class="main__img--container">
+      <img src="{% static 'images/remove1.png' %}" alt="Be the Best!!!">    
+    </div>
+  </div>
+</div>
+    <!--footer section-->
+    <div class="footer__container">
+     <div class="footer__links">
+         <div class="footer__link--wrapper">
+             <div class="footer__link--items">
+                 <h2>About the developer</h2>
+                 <a href="tech">How it works</a>
+                 <a href="/">Testimonials</a>
+                 <a href="/">Careers</a>
+                 <a href="contact">Contact</a>
+                 <a href="/">Terms of service</a>
+             </div>
+             <div class="footer__link--items">
+                <h2>Developer Contact</h2>
+                <a href="contact">Contact</a>
+                <a href="/">Support</a>
+                <a href="/">Help</a>
+                <a href="/">Destinations</a>
+                <a href="/">Quotes</a>
+            </div>
+         </div>
+         <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>Videos</h2>
+                <a href="/">Submit Video</a>
+                <a href="/">Ambassadors</a>
+                <a href="/">Influencer</a>
+                <a href="/">Agency</a>
+            </div>
+            <div class="footer__link--items">
+               <h2>Social Media</h2>
+               <a href="https://www.instagram.com/joshuaoluwaferonmi/">Instagram</a>
+               <a href="https://web.facebook.com/joshua.oluwaferonmi/">Facebook</a>
+               <a href="https://twitter.com/OluferonmiJ">Twitter</a>
+               <a href="https://www.linkedin.com/feed/">linkedin</a>
+               <a href="https://web.telegram.org/z/">Telegram</a>
+               <a href="+234-70-6583-8151">Whatsapp</a>
+           </div>
+        </div>
+     </div>
+     <div class="social__media">
+         <div class="social__media--wrap">
+             <div class="footer__logo">
+                 <a href="/" id="footer__logo"><i class="fas 
+                 fa-cogs"></i>ENGINEERING <br/>SOLUTIONS</a>
+             </div>
+             <P class="website__right">&copyENGINEERING SOLUTIONS 2021. All rights
+             reserved</P>
+             <div class="social__icons">
+                 <a href="/" class="social__icon--link" target="_blank">
+                   <i class="fab fa-instagram"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                 </a>
+                 <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                 </a>
+            </div>
+         </div>
+     </div>
+    </div>
+
+    <script src="{% static 'app.js' %}"></script>
+</body>
+</html>
